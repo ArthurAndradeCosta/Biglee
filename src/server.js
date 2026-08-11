@@ -46,9 +46,9 @@ app.use(express.urlencoded({ extended: true }));
 // SERVIR FRONT-END ESTÁTICO
 // ========================================
 
-app.use("/cliente", express.static(path.resolve(__dirname, "..", "..", "Front-End", "cliente")));
-app.use("/admin", express.static(path.resolve(__dirname, "..", "..", "Front-End", "admin")));
-app.use("/assets", express.static(path.resolve(__dirname, "..", "..", "Front-End", "cliente", "assets")));
+app.use("/cliente", express.static(path.resolve(__dirname, "..", "Front-end", "cliente")));
+app.use("/admin", express.static(path.resolve(__dirname, "..", "Front-end", "admin")));
+app.use("/assets", express.static(path.resolve(__dirname, "..", "Front-end", "cliente", "assets")));
 
 
 // ========================================
