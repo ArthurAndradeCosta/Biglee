@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2a1f1f"/>
+      <stop offset="100%" stop-color="#0f0a0a"/>
+    </radialGradient>
+    <linearGradient id="paoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="100%" stop-color="#a87a4a"/>
+    </linearGradient>
+    <linearGradient id="carne" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b3410"/>
+      <stop offset="100%" stop-color="#3d1f08"/>
+    </linearGradient>
+    <linearGradient id="queijo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1c232"/>
+      <stop offset="100%" stop-color="#c79a1c"/>
+    </linearGradient>
+    <linearGradient id="batata" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7d570"/>
+      <stop offset="100%" stop-color="#c79a1c"/>
+    </linearGradient>
+    <linearGradient id="lata" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cc1f1f"/>
+      <stop offset="100%" stop-color="#7a0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Lata grande -->
+  <g transform="translate(20, 180)">
+    <ellipse cx="30" cy="0" rx="32" ry="8" fill="#999"/>
+    <rect x="-2" y="0" width="64" height="140" fill="url(#lata)"/>
+    <ellipse cx="30" cy="140" rx="32" ry="8" fill="#660"/>
+    <text x="30" y="75" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">COCA</text>
+    <text x="30" y="95" text-anchor="middle" fill="#fff" font-size="12">600ml</text>
+  </g>
+  <!-- Hamburguer duplo -->
+  <ellipse cx="200" cy="80" rx="85" ry="22" fill="url(#paoTop)"/>
+  <path d="M 130 105 L 270 105 L 275 118 L 125 118 Z" fill="url(#queijo)"/>
+  <ellipse cx="200" cy="135" rx="85" ry="18" fill="url(#carne)"/>
+  <path d="M 130 155 L 270 155 L 275 168 L 125 168 Z" fill="url(#queijo)"/>
+  <ellipse cx="200" cy="185" rx="85" ry="18" fill="url(#carne)"/>
+  <ellipse cx="200" cy="225" rx="85" ry="22" fill="url(#paoTop)"/>
+  <!-- Batata grande -->
+  <g transform="translate(310, 180)">
+    <rect x="0" y="0" width="70" height="140" fill="#e52521" rx="8"/>
+    <rect x="6" y="12" width="8" height="120" fill="url(#batata)"/>
+    <rect x="20" y="18" width="8" height="115" fill="url(#batata)"/>
+    <rect x="34" y="12" width="8" height="120" fill="url(#batata)"/>
+    <rect x="48" y="18" width="8" height="115" fill="url(#batata)"/>
+    <rect x="60" y="22" width="6" height="105" fill="url(#batata)"/>
+  </g>
+</svg>

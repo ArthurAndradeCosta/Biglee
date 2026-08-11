@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Cardápio Biglee Burger - Escolha seu hambúrguer, acompanhamento e acréscimo.">
+
+    <meta name="theme-color" content="#e63946">
+
+    <meta property="og:title" content="Cardápio | Biglee Burger">
+    <meta property="og:description" content="Os melhores hambúrgueres artesanais de Desterro de Entre Rios.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:3000/cliente/cardapio.html">
+
+    <link rel="icon" type="image/svg+xml" href="assets/logo-removebg-preview.png">
+
+    <title>Cardápio | Biglee Burger</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cardapio.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="menu-header">
+
+        <a href="index.html" class="menu-logo">
+           <img src="assets/logo-removebg-preview.png" alt="logo">
+        </a>
+
+
+        <div class="menu-header-right">
+
+            <a href="index.html" class="voltar">
+                ← Início
+            </a>
+
+
+            <button class="carrinho-btn" id="abrirCarrinho">
+
+                🛒
+
+                <span id="contadorCarrinho">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         TOPO CARDÁPIO
+    ========================== -->
+
+    <main>
+
+
+        <section class="menu-top">
+
+            <span>
+                🍔 BIGLEE BURGER
+            </span>
+
+            <h1>
+                NOSSO <strong>CARDÁPIO</strong>
+            </h1>
+
+            <p>
+                Escolha seu lanche, monte seu pedido
+                e aproveite.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORIAS (preenchidas via JS)
+        ========================== -->
+
+        <nav class="categorias" id="categorias">
+            <!-- botões de categoria são gerados pelo JS -->
+        </nav>
+
+
+        <!-- Estado de carregamento -->
+        <div id="carregando" style="text-align:center; padding: 60px 20px; color: #999;">
+            Carregando cardápio...
+        </div>
+
+
+        <!-- =========================
+             PRODUTOS (preenchidos via JS)
+        ========================== -->
+
+        <section class="cardapio" id="cardapio" style="display:none;">
+            <!-- cada categoria vira um bloco .categoria-bloco gerado pelo JS -->
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         CARRINHO
+    ========================== -->
+
+    <div class="carrinho-overlay" id="overlay"></div>
+
+
+    <aside class="carrinho" id="carrinho">
+
+
+        <div class="carrinho-header">
+
+            <div>
+
+                <span>
+                    SEU PEDIDO
+                </span>
+
+                <h2>
+                    Carrinho
+                </h2>
+
+            </div>
+
+
+            <button id="fecharCarrinho">
+                ×
+            </button>
+
+        </div>
+
+
+
+        <div class="carrinho-produtos" id="carrinhoProdutos">
+
+            <div class="carrinho-vazio">
+
+                <span>
+                    🛒
+                </span>
+
+                <h3>
+                    Seu carrinho está vazio
+                </h3>
+
+                <p>
+                    Adicione alguns produtos
+                    deliciosos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="carrinho-footer">
+
+
+            <div class="total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCarrinho">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+
+            <button
+                class="finalizar"
+                id="finalizarPedido">
+
+                FINALIZAR PEDIDO
+
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

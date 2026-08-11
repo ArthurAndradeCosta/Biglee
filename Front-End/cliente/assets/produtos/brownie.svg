@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2a1a10"/>
+      <stop offset="100%" stop-color="#0f0805"/>
+    </radialGradient>
+    <linearGradient id="brownie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a2e0e"/>
+      <stop offset="100%" stop-color="#2a1408"/>
+    </linearGradient>
+    <linearGradient id="sorvete" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5e6"/>
+      <stop offset="100%" stop-color="#d4b896"/>
+    </linearGradient>
+    <linearGradient id="chocolate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a1a08"/>
+      <stop offset="100%" stop-color="#1a0a04"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Prato -->
+  <ellipse cx="200" cy="350" rx="180" ry="20" fill="#1a1a1a"/>
+  <ellipse cx="200" cy="350" rx="150" ry="15" fill="#0a0a0a"/>
+  <!-- Brownie (quadrado) -->
+  <rect x="100" y="220" width="200" height="100" fill="url(#brownie)" rx="5"/>
+  <!-- Textura do brownie -->
+  <rect x="115" y="240" width="20" height="20" fill="url(#brownie)" opacity="0.5"/>
+  <rect x="155" y="260" width="25" height="18" fill="url(#brownie)" opacity="0.5"/>
+  <rect x="200" y="235" width="18" height="22" fill="url(#brownie)" opacity="0.5"/>
+  <rect x="240" y="265" width="22" height="20" fill="url(#brownie)" opacity="0.5"/>
+  <!-- Bola de sorvete -->
+  <circle cx="200" cy="180" r="55" fill="url(#sorvete)"/>
+  <circle cx="180" cy="170" r="20" fill="#fff" opacity="0.4"/>
+  <!-- Calda de chocolate -->
+  <path d="M 170 165 Q 180 145 200 130 Q 220 145 230 165 L 220 200 Q 200 215 180 200 Z" fill="url(#chocolate)"/>
+  <path d="M 165 175 Q 175 155 195 140 Q 215 155 225 175 L 220 195 Q 200 205 180 195 Z" fill="url(#chocolate)" opacity="0.8"/>
+  <!-- Cereja -->
+  <circle cx="200" cy="135" r="8" fill="#c41a1a"/>
+  <rect x="198" y="115" width="4" height="22" fill="#2a4a1a" rx="2"/>
+</svg>

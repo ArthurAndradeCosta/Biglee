@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e63946">
+    <title>Admin - Biglee Burguer</title>
+    <link rel="icon" type="image/svg+xml" href="../cliente/assets/logo-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="adm-header">
+        <div class="adm-header-left">
+            <button class="adm-menu-toggle" id="btnMenu" aria-label="Abrir menu">☰</button>
+            <div class="adm-logo">
+                <span><img src="../cliente/assets/logo-removebg-preview.png" alt=""></span>
+                <div>
+                    <strong>Biglee</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </div>
+        <div class="adm-header-right">
+            <span id="userName" class="adm-user">Carregando...</span>
+            <button class="adm-btn adm-btn-ghost" id="btnLogout">Sair</button>
+        </div>
+    </header>
+
+    <div class="adm-shell">
+
+        <!-- ========== SIDEBAR ========== -->
+        <aside class="adm-sidebar" id="sidebar">
+            <nav>
+                <a href="#" data-page="dashboard" class="adm-nav-link active">
+                    <span class="adm-nav-icon">📊</span>
+                    <span class="adm-nav-text">Dashboard</span>
+                </a>
+                <a href="#" data-page="pedidos" class="adm-nav-link">
+                    <span class="adm-nav-icon">📦</span>
+                    <span class="adm-nav-text">Pedidos</span>
+                </a>
+                <a href="#" data-page="produtos" class="adm-nav-link">
+                    <span class="adm-nav-icon">🍔</span>
+                    <span class="adm-nav-text">Produtos</span>
+                </a>
+                <a href="#" data-page="categorias" class="adm-nav-link">
+                    <span class="adm-nav-icon">🏷️</span>
+                    <span class="adm-nav-text">Categorias</span>
+                </a>
+                <a href="#" data-page="usuarios" class="adm-nav-link">
+                    <span class="adm-nav-icon">👥</span>
+                    <span class="adm-nav-text">Usuários</span>
+                </a>
+                <a href="#" data-page="configuracoes" class="adm-nav-link">
+                    <span class="adm-nav-icon">⚙️</span>
+                    <span class="adm-nav-text">Configurações</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- overlay do menu mobile -->
+        <div class="adm-sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- ========== MAIN ========== -->
+        <main class="adm-main">
+            <div id="content">
+                <div class="adm-loading">
+                    <div class="adm-spinner"></div>
+                    <p>Carregando...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ========== MODAL ========== -->
+    <div class="adm-modal" id="modal">
+        <div class="adm-modal-overlay" id="modalOverlay"></div>
+        <div class="adm-modal-content" id="modalContent">
+            <!-- conteúdo injetado dinamicamente -->
+        </div>
+    </div>
+
+    <!-- ========== TOAST ========== -->
+    <div class="adm-toast-container" id="toastContainer"></div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

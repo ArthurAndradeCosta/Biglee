@@ -1,0 +1,1100 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Montserrat", sans-serif;
+
+    background: #111;
+
+    color: #fff;
+
+}
+
+
+button {
+    font-family: inherit;
+}
+
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.menu-header {
+
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #0b0b0b;
+
+    border-bottom: 1px solid #292929;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 20;
+
+}
+
+
+.menu-logo {
+
+    font-family: "Bebas Neue";
+
+    letter-spacing: 2px;
+
+}
+
+.menu-logo img {
+    width: 65px;
+    margin-top: 7px;
+}
+
+
+
+
+.menu-header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.voltar {
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    color: #aaa;
+
+    transition: .3s;
+
+}
+
+
+.voltar:hover {
+    color: #fff;
+}
+
+
+.carrinho-btn {
+
+    position: relative;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e52521;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+
+}
+
+
+#contadorCarrinho {
+
+    position: absolute;
+
+    top: -5px;
+
+    right: -5px;
+
+    min-width: 20px;
+
+    height: 20px;
+
+    padding: 0 5px;
+
+    border-radius: 20px;
+
+    background: #f1c232;
+
+    color: #111;
+
+    font-size: .65rem;
+
+    font-weight: 800;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+/* ========================================
+   TOPO
+======================================== */
+
+.menu-top {
+
+    padding: 80px 7% 50px;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #3a1716,
+            #111 65%
+        );
+
+}
+
+
+.menu-top > span {
+
+    color: #f1c232;
+
+    font-size: .7rem;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.menu-top h1 {
+
+    margin-top: 12px;
+
+    font-family: "Bebas Neue";
+
+    font-size: clamp(4rem, 8vw, 7rem);
+
+    line-height: .9;
+
+}
+
+
+.menu-top h1 strong {
+    color: #e52521;
+}
+
+
+.menu-top p {
+
+    color: #888;
+
+    margin-top: 20px;
+
+    font-size: .9rem;
+
+}
+
+
+
+/* ========================================
+   CATEGORIAS
+======================================== */
+
+.categorias {
+
+    position: sticky;
+
+    top: 75px;
+
+    z-index: 10;
+
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding: 18px 7%;
+
+    background: rgba(17,17,17,.95);
+
+    border-bottom: 1px solid #252525;
+
+    scrollbar-width: none;
+
+}
+
+
+.categorias::-webkit-scrollbar {
+    display: none;
+}
+
+
+.categoria {
+
+    flex-shrink: 0;
+
+    padding: 11px 18px;
+
+    border: 1px solid #383838;
+
+    border-radius: 30px;
+
+    background: #1d1d1d;
+
+    color: #aaa;
+
+    font-size: .72rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.categoria:hover {
+
+    border-color: #e52521;
+
+    color: white;
+
+}
+
+
+.categoria.ativa {
+
+    background: #e52521;
+
+    border-color: #e52521;
+
+    color: white;
+
+}
+
+
+
+/* ========================================
+   CARDÁPIO
+======================================== */
+
+.cardapio {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 70px 7% 120px;
+
+}
+
+
+.categoria-titulo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 70px 0 30px;
+
+}
+
+
+.categoria-titulo:first-child {
+    margin-top: 0;
+}
+
+
+.categoria-titulo > span {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #252525;
+
+    font-size: 1.3rem;
+
+}
+
+
+.categoria-titulo small {
+
+    color: #f1c232;
+
+    font-size: .6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.categoria-titulo h2 {
+
+    font-family: "Bebas Neue";
+
+    font-size: 2.6rem;
+
+    line-height: 1;
+
+}
+
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.produtos-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+/* ========================================
+   PRODUTO
+======================================== */
+
+.produto {
+
+    overflow: hidden;
+
+    border: 1px solid #292929;
+
+    border-radius: 8px;
+
+    background: #1a1a1a;
+
+    transition: .3s;
+
+}
+
+
+.produto:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #4a4a4a;
+
+}
+
+
+.produto-foto {
+
+    height: 230px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #363636,
+            #202020
+        );
+
+}
+
+
+.produto-foto > span {
+
+    font-size: 7rem;
+
+    filter:
+        drop-shadow(0 15px 10px rgba(0,0,0,.5));
+
+}
+
+
+.tag {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    padding: 6px 10px;
+
+    border-radius: 3px;
+
+    background: #e52521;
+
+    color: white;
+
+    font-size: .55rem;
+
+    font-weight: 800;
+
+}
+
+
+.produto-conteudo {
+
+    padding: 22px;
+
+}
+
+
+.produto-conteudo h3 {
+
+    font-family: "Bebas Neue";
+
+    font-size: 1.9rem;
+
+    letter-spacing: .5px;
+
+}
+
+
+.produto-conteudo p {
+
+    min-height: 70px;
+
+    margin-top: 8px;
+
+    color: #888;
+
+    font-size: .75rem;
+
+    line-height: 1.7;
+
+}
+
+
+.produto-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.produto-footer strong {
+
+    font-size: 1.1rem;
+
+    white-space: nowrap;
+
+}
+
+
+.adicionar {
+
+    padding: 11px 14px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #e52521;
+
+    color: white;
+
+    font-size: .65rem;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.adicionar:hover {
+
+    background: #ff3b36;
+
+    transform: scale(1.03);
+
+}
+
+
+
+/* ========================================
+   CARRINHO OVERLAY
+======================================== */
+
+.carrinho-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 40;
+
+    background: rgba(0,0,0,.7);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s;
+
+}
+
+
+.carrinho-overlay.aberto {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+
+/* ========================================
+   CARRINHO
+======================================== */
+
+.carrinho {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: min(450px, 100%);
+
+    height: 100vh;
+
+    z-index: 50;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #171717;
+
+    border-left: 1px solid #333;
+
+    transform: translateX(100%);
+
+    transition: .4s ease;
+
+}
+
+
+.carrinho.aberto {
+
+    transform: translateX(0);
+
+}
+
+
+.carrinho-header {
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #292929;
+
+}
+
+
+.carrinho-header span {
+
+    color: #f1c232;
+
+    font-size: .6rem;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.carrinho-header h2 {
+
+    margin-top: 5px;
+
+    font-family: "Bebas Neue";
+
+    font-size: 2rem;
+
+}
+
+
+.carrinho-header button {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: 1px solid #333;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 1.7rem;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ========================================
+   PRODUTOS CARRINHO
+======================================== */
+
+.carrinho-produtos {
+
+    flex: 1;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+
+.carrinho-vazio {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    color: #777;
+
+}
+
+
+.carrinho-vazio span {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+}
+
+
+.carrinho-vazio h3 {
+
+    color: white;
+
+    font-family: "Bebas Neue";
+
+    font-size: 1.6rem;
+
+}
+
+
+.carrinho-vazio p {
+
+    margin-top: 8px;
+
+    font-size: .75rem;
+
+}
+
+
+
+/* ========================================
+   ITEM DO CARRINHO
+======================================== */
+
+.item-carrinho {
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #292929;
+
+}
+
+
+.item-carrinho h3 {
+
+    font-family: "Bebas Neue";
+
+    font-size: 1.3rem;
+
+}
+
+
+.item-preco {
+
+    margin-top: 5px;
+
+    color: #aaa;
+
+    font-size: .75rem;
+
+}
+
+
+.item-controles {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+}
+
+
+.item-controles button {
+
+    width: 27px;
+
+    height: 27px;
+
+    border: 1px solid #444;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.item-controles span {
+
+    min-width: 20px;
+
+    text-align: center;
+
+    font-size: .8rem;
+
+}
+
+
+.item-total {
+
+    color: #f1c232;
+
+    font-weight: 700;
+
+    font-size: .85rem;
+
+}
+
+
+
+/* ========================================
+   FOOTER CARRINHO
+======================================== */
+
+.carrinho-footer {
+
+    padding: 22px;
+
+    border-top: 1px solid #292929;
+
+    background: #111;
+
+}
+
+
+.total {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+
+}
+
+
+.total span {
+    color: #aaa;
+}
+
+
+.total strong {
+
+    font-size: 1.3rem;
+
+    color: #f1c232;
+
+}
+
+
+.finalizar {
+
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #e52521;
+
+    color: white;
+
+    font-weight: 800;
+
+    font-size: .75rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.finalizar:hover {
+    background: #ff3b36;
+}
+
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 900px) {
+
+    .produtos-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .menu-header {
+
+        padding: 0 5%;
+
+    }
+
+
+    .voltar {
+        display: none;
+    }
+
+
+    .menu-top {
+
+        padding:
+            65px 5%
+            40px;
+
+    }
+
+
+    .categorias {
+
+        padding:
+            15px 5%;
+
+    }
+
+
+    .cardapio {
+
+        padding:
+            40px 5%
+            100px;
+
+    }
+
+
+    .produtos-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .categoria-titulo {
+
+        margin-top: 50px;
+
+    }
+
+
+    .produto-foto {
+
+        height: 250px;
+
+    }
+
+
+    .produto-foto > span {
+
+        font-size: 7.5rem;
+
+    }
+
+}
+/* ========================================
+   CARRINHO - ITENS DINÂMICOS
+======================================== */
+.item-carrinho {
+    padding: 16px 0;
+    border-bottom: 1px solid #292929;
+}
+
+.item-carrinho-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.item-carrinho-info h3 {
+    margin: 0;
+    font-size: .95rem;
+}
+
+.item-carrinho-info strong {
+    color: #f1c232;
+    white-space: nowrap;
+}
+
+.item-carrinho-acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade-btn,
+.remover-item {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.quantidade-btn:hover,
+.remover-item:hover {
+    border-color: #f1c232;
+}
+
+.remover-item {
+    margin-left: auto;
+    color: #ff6b66;
+}
+
+.carrinho-aberto {
+    overflow: hidden;
+}
+
+.finalizar:disabled {
+    opacity: .6;
+    cursor: wait;
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a2a1a"/>
+      <stop offset="100%" stop-color="#050f05"/>
+    </radialGradient>
+    <linearGradient id="paoTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0c897"/>
+      <stop offset="100%" stop-color="#a88c5a"/>
+    </linearGradient>
+    <linearGradient id="carne" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b3410"/>
+      <stop offset="100%" stop-color="#3d1f08"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Pão -->
+  <ellipse cx="200" cy="120" rx="120" ry="40" fill="url(#paoTop)"/>
+  <!-- Alface frisada -->
+  <path d="M 90 165 Q 110 145 130 165 Q 150 145 170 165 Q 190 145 210 165 Q 230 145 250 165 Q 270 145 290 165 Q 310 145 310 165 L 310 175 L 90 175 Z" fill="#5fa838"/>
+  <!-- Tomate -->
+  <circle cx="160" cy="180" r="10" fill="#d63838"/>
+  <circle cx="240" cy="180" r="10" fill="#d63838"/>
+  <!-- Cebola roxa -->
+  <ellipse cx="200" cy="180" rx="12" ry="5" fill="#9b6b9b"/>
+  <!-- Maionese (gotejando) -->
+  <path d="M 80 195 L 320 195 L 320 205 Q 280 215 240 205 Q 200 215 160 205 Q 120 215 80 205 Z" fill="#f5f5dc"/>
+  <!-- Carne -->
+  <ellipse cx="200" cy="225" rx="125" ry="28" fill="url(#carne)"/>
+  <!-- Pão inferior -->
+  <ellipse cx="200" cy="280" rx="125" ry="35" fill="url(#paoTop)"/>
+  <rect x="75" y="275" width="250" height="20" fill="url(#paoTop)"/>
+</svg>
